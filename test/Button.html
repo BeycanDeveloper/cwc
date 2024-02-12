@@ -1,0 +1,30 @@
+<template>
+    <button class="button-1">Click me</button>
+</template>
+
+<script>
+() => {
+    return {
+        name: 'button-1',
+        run: () => {
+            const button = document.querySelector('.button-1');
+            button.addEventListener('click', function() {
+                alert('Button 1 clicked');
+            });
+
+            const span = document.createElement('span');
+            span.innerText = ' with 1';
+            button.appendChild(span)
+        }
+    }
+}
+</script>
+
+
+<style>
+    .button-1 {
+        background: red;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>

@@ -1,0 +1,13 @@
+{
+  "name": "cwc",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "node test/test.js"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.3",
+    "uglify-js": "^3.17.4"
+  }
+}
